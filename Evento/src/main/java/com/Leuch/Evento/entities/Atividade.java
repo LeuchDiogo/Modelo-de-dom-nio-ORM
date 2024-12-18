@@ -20,7 +20,7 @@ public class Atividade {
     @Column(columnDefinition = "TEXT")
     private String descricao;
 
-    private Double price;
+    private Double preco;
 
     @ManyToOne
     @JoinColumn(name = "categoria_id")
@@ -42,7 +42,7 @@ public class Atividade {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
-        this.price = price;
+        this.preco = price;
     }
 
     public Integer getId() {
@@ -70,11 +70,11 @@ public class Atividade {
     }
 
     public Double getPrice() {
-        return price;
+        return preco;
     }
 
     public void setPrice(Double price) {
-        this.price = price;
+        this.preco = price;
     }
 
 
